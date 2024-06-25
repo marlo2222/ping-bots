@@ -1,0 +1,19 @@
+name: Ping cURL request
+
+on:
+  schedule:
+    - cron: '*/15 11-23 * * *'
+    - cron: '*/15 0-1 * * *'
+
+jobs:
+  curl_request:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: cURl super promo
+        run: |
+          curl -X GET "${{ secrets.PROMO_URL }}" \
+          -H "Accept: application/json"
