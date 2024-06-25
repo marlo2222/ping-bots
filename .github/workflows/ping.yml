@@ -16,5 +16,5 @@ jobs:
       
       - name: cURl super promo
         run: |
-          curl -X GET "${{ secrets.PROMO_URL }}" \
+          curl -X GET `${{env.PROMO_URL}}` \
           -H "Accept: application/json"
