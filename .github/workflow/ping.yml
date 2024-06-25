@@ -1,6 +1,7 @@
 name: Ping cURL request
 
 on:
+  push:
   schedule:
     - cron: '*/15 11-23 * * *'
     - cron: '*/15 0-1 * * *'
