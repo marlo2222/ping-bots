@@ -1,10 +1,8 @@
 name: Ping cURL request
 
 on:
-  push:
   schedule:
     - cron: '*/15 11-23 * * *'
-    - cron: '*/15 0-1 * * *'
 
 jobs:
   curl_request:
@@ -16,5 +14,5 @@ jobs:
       
       - name: cURl super promo
         run: |
-          curl -X GET "https://superpromo-fzybhg3q.b4a.run/" \
+          curl -X GET "vagas1-ik99mzha.b4a.run" \
           -H "Accept: application/json"
