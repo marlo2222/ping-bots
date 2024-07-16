@@ -26,5 +26,5 @@ jobs:
       
       - name: cURl vagas
         run: |
-          curl -X GET "https://puppeteerscrap-ny56u7v2.b4a.run/" \
+          curl -X GET "https://pupperter-promo-1.onrender.com/" \
           -H "Accept: application/json"
