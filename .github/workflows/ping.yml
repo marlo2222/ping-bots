@@ -14,7 +14,7 @@ jobs:
       
       - name: cURl vagas
         run: |
-          curl -X GET "https://vagas1-ik99mzha.b4a.run/" \
+          curl -X GET "https://vagas-5l0y.onrender.com" \
           -H "Accept: application/json"
 
   curl_request_puppeteer:
