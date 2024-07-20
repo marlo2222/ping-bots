@@ -5,26 +5,22 @@ on:
     - cron: '*/15 10-23 * * *'
 
 jobs:
-  curl_request:
+  curl_request_bots:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
       - name: cURl vagas
         run: |
           curl -X GET "https://vagas-5l0y.onrender.com" \
           -H "Accept: application/json"
 
-  curl_request_puppeteer:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      
-      - name: cURl vagas
+      - name: cURl puppeter-promo
         run: |
           curl -X GET "https://pupperter-promo-1.onrender.com/" \
           -H "Accept: application/json"
+
+      - name: cURl super-promo
+        run: |
+          curl -X GET "https://superpromoamazon-pr1k524z.b4a.run/" \
+          -H "Accept: application/json"
+
