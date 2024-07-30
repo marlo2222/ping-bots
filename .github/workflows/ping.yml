@@ -5,15 +5,10 @@ on:
     - cron: '*/15 10-23 * * *'
 
 jobs:
-  curl_request_bots:
+  curl_request_super_promo:
     runs-on: ubuntu-latest
     
     steps:
-      - name: cURl vagas
-        run: |
-          curl -X GET "https://vagas-5l0y.onrender.com" \
-          -H "Accept: application/json"
-
       - name: cURl puppeter-promo
         run: |
           curl -X GET "https://pupperter-promo-1.onrender.com/" \
@@ -22,5 +17,14 @@ jobs:
       - name: cURl super-promo
         run: |
           curl -X GET "https://superpromoamazon-pr1k524z.b4a.run/" \
+          -H "Accept: application/json"
+
+  curl_request_vagas:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: cURl vagas
+        run: |
+          curl -X GET "https://vagas-5l0y.onrender.com" \
           -H "Accept: application/json"
 
