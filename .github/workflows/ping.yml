@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: cURl vagas
         run: |
-          curl -X GET "https://vagas-bot.onrender.com" \
+          curl -X GET "https://vagasbot-12qddb3x.b4a.run/" \
           -H "Accept: application/json"
 
