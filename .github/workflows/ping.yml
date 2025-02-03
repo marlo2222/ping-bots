@@ -14,7 +14,6 @@ jobs:
           curl -X GET "padrinhovagas2-fkg7e8zm.b4a.run/" \
           -H "Accept: application/json"
 
-    steps:
       - name: cURl padrinho
         run: |
           curl -X GET "https://gemini-integration-api.onrender.com/ping/" \
