@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: cURl vagas
         run: |
-          curl -X GET "https://padrinhovagas3-zmwydi5g.b4a.run/" \
+          curl -X GET "https://vagasbot1-89kui9yb.b4a.run/" \
           -H "Accept: application/json"
 
       - name: cURl padrinho
