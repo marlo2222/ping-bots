@@ -14,6 +14,7 @@ jobs:
           curl -X GET "https://vagasbot2-wdns7gte.b4a.run/" \
           -H "Accept: application/json"
 
+
       - name: cURl padrinho
         run: |
           curl -X GET "https://gemini-integration-api.onrender.com/ping/" \
